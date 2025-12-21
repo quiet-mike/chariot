@@ -1,0 +1,13 @@
+# Java
+server/target/
+server/.idea/
+server/*.iml
+
+# Node/Angular
+client/node_modules/
+client/dist/
+client/.angular/
+client/.cache/
+
+# Data
+server/data/

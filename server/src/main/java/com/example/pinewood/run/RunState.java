@@ -1,0 +1,10 @@
+package com.example.pinewood.run;
+
+public enum RunState {
+    READY_FOR_NEXT_LEG,
+    AWAITING_CLIENT_ACK_START,
+    AWAITING_START_SIGNAL,
+    RUNNING_LEG,
+    LEG_COMPLETE_AWAITING_CLIENT_DECISION,
+    TOURNAMENT_COMPLETE
+}
