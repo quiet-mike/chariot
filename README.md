@@ -1,5 +1,11 @@
 # Chariot (Client/Server)
 
+A client/server application for managing and running a scouting pinewood car race.
+
+The server component is a Springboot application written in Java.
+
+The client component is an Angular web client
+
 This repository contains:
 - **server/**: Java 17 + Spring Boot REST API
 - **client/**: Angular web client (skeleton UI)
