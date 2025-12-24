@@ -1,4 +1,4 @@
-# Pinewood Derby Race (Client/Server)
+# Chariot (Client/Server)
 
 This repository contains:
 - **server/**: Java 17 + Spring Boot REST API
@@ -56,5 +56,5 @@ Tournament run:
 
 `DefaultRoundRobinAlgorithm`:
 - Determines legs by rotating racers through lanes to ensure each racer runs multiple times (configurable).
-- Produces a sequence of legs where each leg contains up to `track.slotCount` racers.
+- Produces a sequence of legs where each leg contains up to `track.laneCount` racers.
 - Ranking is computed from **total time** across legs (lowest wins).

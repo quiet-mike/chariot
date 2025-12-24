@@ -7,7 +7,7 @@ import { RunView, TournamentConfig } from '../api/models';
 @Component({
   standalone: true,
   imports: [CommonModule, FormsModule],
-  template: \`
+  template: `
   <div class="card">
     <h2>Run Tournament</h2>
 
@@ -76,7 +76,7 @@ import { RunView, TournamentConfig } from '../api/models';
 
     </div>
   </div>
-  \`
+  `
 })
 export class RunPage {
   tournaments: TournamentConfig[] = [];

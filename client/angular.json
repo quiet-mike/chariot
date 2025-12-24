@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pinewood-derby-client": {
+    "chariot-client": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -12,7 +12,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pinewood-derby-client",
+            "outputPath": "dist/chariot-client",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
@@ -24,10 +24,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            "buildTarget": "chariot-client:build",
             "proxyConfig": "proxy.conf.json"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

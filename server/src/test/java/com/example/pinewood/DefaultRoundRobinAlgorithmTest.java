@@ -1,27 +1,27 @@
-package com.example.pinewood;
-
-import com.example.pinewood.algo.DefaultRoundRobinAlgorithm;
-import com.example.pinewood.algo.LegResult;
-import com.example.pinewood.algo.RaceLeg;
-import com.example.pinewood.algo.FinishRecord;
-import com.example.pinewood.model.Racer;
-import com.example.pinewood.model.TrackConfig;
-import com.example.pinewood.model.TrackLane;
-
-import org.junit.jupiter.api.Test;
+package io.github.chariot;
 
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import io.github.chariot.algo.DefaultRoundRobinAlgorithm;
+import io.github.chariot.algo.FinishRecord;
+import io.github.chariot.algo.LegResult;
+import io.github.chariot.algo.RaceLeg;
+import io.github.chariot.model.Racer;
+import io.github.chariot.model.TrackConfig;
+import io.github.chariot.model.TrackLane;
 
 public class DefaultRoundRobinAlgorithmTest {
     @Test
     void generatesLegsAndRanksByTotalTime() {
         TrackConfig track = new TrackConfig();
         track.setName("4-lane");
-        track.setSlotCount(4);
-        track.setSlots(List.of(new TrackLane(1, "red"),
+        track.setLaneCount(4);
+        track.setLanes(List.of(new TrackLane(1, "red"),
                 new TrackLane(2, "blue"),
                 new TrackLane(3, "green"),
                 new TrackLane(4, "yellow")

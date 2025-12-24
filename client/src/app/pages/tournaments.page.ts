@@ -7,7 +7,7 @@ import { AlgoInfo, Racer, TournamentConfig, TrackConfig } from '../api/models';
 @Component({
   standalone: true,
   imports: [CommonModule, FormsModule],
-  template: \`
+  template: `
   <div class="card">
     <h2>Tournaments</h2>
 
@@ -37,7 +37,7 @@ import { AlgoInfo, Racer, TournamentConfig, TrackConfig } from '../api/models';
 
     <div class="card">
       <h3>Algorithm Config (JSON)</h3>
-      <p class="small">Default algorithm supports: {"rounds": 2}</p>
+      <p class="small">Default algorithm supports: &#123;"rounds": 2&#125;</p>
       <textarea rows="4" style="width: 100%" [(ngModel)]="algoConfigText"></textarea>
       <div class="small" *ngIf="algoConfigError">{{algoConfigError}}</div>
     </div>
@@ -73,7 +73,7 @@ import { AlgoInfo, Racer, TournamentConfig, TrackConfig } from '../api/models';
       </tbody>
     </table>
   </div>
-  \`
+  `
 })
 export class TournamentsPage {
   tracks: TrackConfig[] = [];

@@ -7,7 +7,7 @@ import { Racer } from '../api/models';
 @Component({
   standalone: true,
   imports: [CommonModule, FormsModule],
-  template: \`
+  template: `
   <div class="card">
     <h2>Racers</h2>
     <div class="row">
@@ -49,7 +49,7 @@ import { Racer } from '../api/models';
       </tbody>
     </table>
   </div>
-  \`
+  `
 })
 export class RacersPage {
   racers: Racer[] = [];

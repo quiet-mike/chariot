@@ -1,5 +1,5 @@
-export interface TrackSlot { laneNumber: number; color: string; }
-export interface TrackConfig { id?: string; name: string; slotCount: number; slots: TrackSlot[]; }
+export interface TrackLane { laneNumber: number; color: string; }
+export interface TrackConfig { id?: string; name: string; laneCount: number; lanes: TrackLane[]; }
 
 export interface Racer { id?: string; firstName: string; lastName: string; number: string; carName?: string; }
 

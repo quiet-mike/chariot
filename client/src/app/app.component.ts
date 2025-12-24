@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
@@ -5,9 +6,9 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterLink, RouterOutlet],
-  template: \`
+  template: `
   <div class="container">
-    <h1>Pinewood Derby</h1>
+    <h1>Chariot</h1>
     <div class="nav card">
       <a routerLink="/tracks">Track Config</a>
       <a routerLink="/racers">Racers</a>
@@ -28,7 +29,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       </ol>
     </div>
   </div>
-  \`
+  `
 })
 export class AppComponent {
   get isMenu() {
